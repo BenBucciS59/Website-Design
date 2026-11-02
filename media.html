@@ -5,25 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media | Benjamin Bucci</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        function hoverNavigate(page) {
+            const currentPage =
+                window.location.pathname.split('/').pop();
+
+            if (currentPage !== page) {
+                window.location.href = page;
+            }
+        }
+    </script>
 </head>
 <body>
 
     <header>
-        <h1>Benjamin Bucci</h1>
+        <h1>Ben Bucci</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" onmouseover="hoverNavigate('index.html')">Home</a>
+            <a href="about.html" onmouseover="hoverNavigate('about.html')">About</a>
+            <a href="media.html" onmouseover="hoverNavigate('media.html')">Media</a>
+            <a href="contact.html" onmouseover="hoverNavigate('contact.html')">Contact</a>
         </nav>
     </header>
 
     <main>
-        <h2>Media Page</h2>
+        <h2>Media</h2>
 
-        <img src="images/placeholder.jpg" alt="Placeholder image">
+        <iframe
+            style="aspect-ratio: 9 / 16; width: 30%; max-width: 600px;"
+            src="https://www.youtube.com/embed/1nlfOlRbjDc"
+            title="YouTube Short"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
 
-        <p>Audio and video examples will go here.</p>
+        <iframe
+            style="aspect-ratio: 9 / 16; width: 30%; max-width: 600px;"
+            src="https://www.youtube.com/embed/r1VOt_31Fmc"
+            title="YouTube Short"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <iframe
+            style="aspect-ratio: 9 / 16; width: 30%; max-width: 600px;"
+            src="https://www.youtube.com/embed/lL580sWcziU"
+            title="YouTube Short"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
     </main>
 
 </body>

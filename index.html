@@ -5,25 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Benjamin Bucci</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        function hoverNavigate(page) {
+            const currentPage =
+                window.location.pathname.split('/').pop();
+
+            if (currentPage !== page) {
+                window.location.href = page;
+            }
+        }
+    </script>
 </head>
 <body>
 
     <header>
-        <h1>Benjamin Bucci</h1>
+        <h1>Ben Bucci</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" onmouseover="hoverNavigate('index.html')">Home</a>
+            <a href="about.html" onmouseover="hoverNavigate('about.html')">About</a>
+            <a href="media.html" onmouseover="hoverNavigate('media.html')">Media</a>
+            <a href="contact.html" onmouseover="hoverNavigate('contact.html')">Contact</a>
         </nav>
     </header>
 
     <main>
-        <h2>Homepage</h2>
+        <h2>Home</h2>
+        
+        <img src="images\propping horn, smiling 2 (zoomed).jpg" width="300px">
+        <img src="images/facing left, low point, slightly leaning back.jpg" width="300px">
 
-        <img src="images/placeholder.jpg" alt="Placeholder image">
+        <h3>Welcome to Ben Bucci!</h3>
 
-        <p>Welcome to my music website.</p>
+        <img src="images\Conn10DFrenchHorn.jpg" width="100px">
+
     </main>
 
 </body>

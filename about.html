@@ -5,25 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Benjamin Bucci</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        function hoverNavigate(page) {
+            const currentPage =
+                window.location.pathname.split('/').pop();
+
+            if (currentPage !== page) {
+                window.location.href = page;
+            }
+        }
+    </script>
 </head>
+
 <body>
 
     <header>
-        <h1>Benjamin Bucci</h1>
+        <h1>Ben Bucci</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+            <a href="index.html" onmouseover="hoverNavigate('index.html')">Home</a>
+            <a href="about.html" onmouseover="hoverNavigate('about.html')">About</a>
+            <a href="media.html" onmouseover="hoverNavigate('media.html')">Media</a>
+            <a href="contact.html" onmouseover="hoverNavigate('contact.html')">Contact</a>
+        </nav>      
     </header>
 
     <main>
-        <h2>About Page</h2>
+        <h2>About</h2>
 
-        <img src="images/placeholder.jpg" alt="Placeholder image">
+        <img src="images\propping horn, smiling 2 (zoomed).jpg" width="300px">
 
-        <p>Short biography goes here.</p>
+        <p>Ben Bucci is a Senior at Central Michigan University. He is currently a Double Major in Physics and French Horn Performance. Ben Bucci began playing French Horn in fifth grade, and has now played the instrument for 12 years. </p>
+        <p>Ben Bucci is currently working on his senior capstone project to satisfy his physics degree, Predicting Silicon Cluster Geometries. This project is important because Silicon is one of the most important materials today, mainly because of its essential function in modern computer technology. By using Meta's Universal Model for Atoms, Ben Bucci seeks to find the Silicon Clusters that will be used in the next generation of technology. </p>
+        <p>In his spare time, Ben Bucci enjoys a nice game of chess and experimenting with Autotune.</p>
     </main>
 
 </body>
